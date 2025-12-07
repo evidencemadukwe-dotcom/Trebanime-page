@@ -1,0 +1,222 @@
+/*naruto */
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main{
+  
+  background:linear-gradient(to right, #3a3e45,  #121111);
+  color:white;
+  line-height: 1.6;
+  margin:0;
+  z-index: 0;
+}
+header h4{
+    background: linear-gradient( to top, #ffd987, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p1{
+    background: linear-gradient( to top, #ffd987, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, white, #35424a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header h2{
+     font-size: 3rem;
+  background: linear-gradient(to right, white, #35424a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2{
+     font-size: 3rem;
+  background: linear-gradient(to right, white, #35424a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px white;
+}
+header{
+  text-align: center;
+  margin-bottom: 0px;
+  background-image: url("back.jpeg");
+  color:white;
+  padding:30px;
+  border-bottom:grey 3px solid ;
+  z-index:0;
+  
+}
+
+/* Container */
+.anime-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:25px;
+}
+
+/* Card Base */
+.anime-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+  .box-text {
+  text-align:center;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+  
+
+.box-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.box-text p {
+  font-size: 1rem;
+}
+
+.naruto{
+    background-image:url("narutob.jpeg") ;
+}
+.onepiece{
+    background-image:url("onepieceb.jpeg") ;
+}
+.bleach{
+    background-image:url("bleachb.jpeg") ;
+}
+.anime-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  height: auto; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  transition: transform 0.5s ease;  
+}
+.anime-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+  z-index: 0;
+}
+.my-text{
+    font-family:'verdana';
+    font-weight:bold;
+}
+.p1{
+    font-weight:bold;
+    font-size:20px;
+}
+
+a{
+    color:#c4c4c4;   
+    font-style: italic; 
+    text-align: center;
+}
+.char-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin: 0 auto 10px;
+  border: 3px solid white;
+}
+/*these are the background images*/
+/*for naruto*/
+.narbg {
+  background-image: url("narbg.jpeg");
+}
+
+.sasukebg {
+  background-image: url("sasukebg.jpeg");
+}
+
+.madarabg {
+  background-image: url("madarabg.jpeg");
+}
+/*for bleach*/
+.ichigobg {
+  background-image: url("ichigobg.jpeg");
+}
+
+.yhwachbg {
+  background-image: url("yhwachbg.jpeg");
+}
+
+.yamamotobg {
+  background-image: url("yamamotobg.jpeg");
+}
+/*for onePiece*/
+.luffybg {
+  background-image: url("luffybg.jpeg");
+}
+
+.rogerbg {
+  background-image: url("rogerbg.jpeg");
+}
+
+.whitebeardbg {
+  background-image: url("whitebeardbg.jpeg");
+}
+/*Profile imgs
+<img class="char-img" src="narutoprofile.jpeg" alt="Naruto">
+  <img class="char-img" src="sasukeprofile.jpeg" alt="Sasuke">
+      <img class="char-img" src="madaraprofile.jpeg" alt="Madara">
+</header>*/
+.logo-area {
+    position: relative;    
+    z-index: 10;      
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+.logo {
+    width: 300px;
+    display: inline-block;
+    mix-blend-mode: multiply;
+    
+}
+.characters{
+    width: 300px;
+    height:200px;
+    display: inline-block;
+    mix-blend-mode: multiply;
+    
+}
+.character-area{
+    position: relative;    
+    z-index: 10;      
+    text-align: center;
+    margin:0;
+    padding:0;
+ /*   box-shadow: 0 10px 25px rgba(0,0,0,0.8);*/
+}
+
+/* Footer */
+footer{
+  padding:20px;
+  color: white;
+  background-image: url("back.jpeg");
+  text-align: center;
+  border-top: grey 3px solid ;
+}
